@@ -8,22 +8,29 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from nuwa device
-$(call inherit-product, device/xiaomi/nuwa/device.mk)
+# Inherit from fuxi device
+$(call inherit-product, device/xiaomi/fuxi/device.mk)
 
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# UDFPS
-TARGET_HAS_UDFPS := true
+# GMS
+$(call inherit-product, vendor/google/gms/gms-vendor.mk)
 
-PRODUCT_NAME := lineage_nuwa
-PRODUCT_DEVICE := nuwa
+PRODUCT_NAME := lineage_fuxi
+PRODUCT_DEVICE := fuxi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := 2210132C
+PRODUCT_MODEL := Xiaomi 13
+
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_SYSTEM_NAME := Xiaomi 13
+PRODUCT_SYSTEM_DEVICE := Xiaomi 13
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=Xiaomi/nuwa/nuwa:15/AQ3A.240912.001/OS2.0.200.7.VMBCNXM:user/release-keys
+    BuildFingerprint=Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.200.7.VMBCNXM:user/release-keys

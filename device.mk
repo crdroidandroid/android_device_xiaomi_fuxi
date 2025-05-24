@@ -7,11 +7,8 @@
 # Inherit from xiaomi sm8550-common
 $(call inherit-product, device/xiaomi/sm8550-common/common.mk)
 
-# Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/nuwa/nuwa-vendor.mk)
-
-# Camera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+# Powershare
+$(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/reverse_chg_mode)
 
 # DSP Volume Synchronizer
 PRODUCT_PACKAGES += \
@@ -21,12 +18,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
-# Powershare
-$(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/reverse_chg_mode)
-
 # Init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/init.nuwa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nuwa.rc \
+    $(LOCAL_PATH)/init/init.fuxi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fuxi.rc \
 
 # Euicc
 PRODUCT_PACKAGES += \
@@ -37,20 +31,20 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    SettingsProviderResNuwa \
-    ApertureOverlayNuwa \
-    FrameworkResOverlayNuwa \
-    SettingsOverlayNuwa \
-    SystemUIOverlayNuwa \
+    SettingsProviderResFuxi \
+    ApertureOverlayFuxi \
+    FrameworkResOverlayFuxi \
+    SettingsOverlayFuxi \
+    SystemUIOverlayFuxi \
     WifiResCommonMainline_Sys \
-    WifiOverlayNuwa
+    WifiOverlayFuxi
 
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.xiaomi.v2
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/hals.conf:$(TARGET_COPY_OUT_ODM)/etc/sensors/hals.conf
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_ODM)/etc/sensors/hals.conf
 
 # PowerShare
 PRODUCT_PACKAGES += \
@@ -59,3 +53,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Inherit from the proprietary version
+$(call inherit-product, vendor/xiaomi/fuxi/fuxi-vendor.mk)

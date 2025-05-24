@@ -5,7 +5,7 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworkResOverlayNuwa",
+    name: "SystemUIOverlayFuxi",
     sdk_version: "current",
     vendor: true,
 }

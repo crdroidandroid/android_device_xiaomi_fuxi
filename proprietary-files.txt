@@ -1001,29 +1001,29 @@ odm/lib64/camera/plugins/com.xiaomi.plugin.tsskinbeautifier.so
 
 # Camera sensors
 odm/lib64/camera/aon_front.pb
-odm/lib64/camera/com.qti.actuator.nuwa_ofilm_s5kjn1_dw9800v_tele_actuator.so
-odm/lib64/camera/com.qti.actuator.nuwa_ofilm_s5kjn1_dw9800v_ultra_actuator.so
-odm/lib64/camera/com.qti.actuator.nuwa_semco_imx989_ak7316_wide_actuator.so
-odm/lib64/camera/com.qti.eeprom.nuwa_ofilm_s5kjn1_gt24p128f_ultra_eeprom.so
-odm/lib64/camera/com.qti.eeprom.nuwa_ofilm_s5kjn1_p24c128f_tele_eeprom.so
-odm/lib64/camera/com.qti.eeprom.nuwa_semco_imx989_p24c128f_wide_eeprom.so
-odm/lib64/camera/com.qti.eeprom.nuwa_sunny_ov32c_gt24p64e_front_eeprom.so
-odm/lib64/camera/com.qti.ois.nuwa_tele_bu24618_ois.so
-odm/lib64/camera/com.qti.ois.nuwa_wide_bu24618_ois.so
-odm/lib64/camera/com.qti.sensor.nuwa_ofilm_s5kjn1_tele.so
-odm/lib64/camera/com.qti.sensor.nuwa_ofilm_s5kjn1_ultra.so
-odm/lib64/camera/com.qti.sensor.nuwa_semco_imx989_wide.so
-odm/lib64/camera/com.qti.sensor.nuwa_sunny_ov32c_front.so
-odm/lib64/camera/com.qti.sensormodule.nuwa_ofilm_s5kjn1_tele.bin
-odm/lib64/camera/com.qti.sensormodule.nuwa_ofilm_s5kjn1_ultra.bin
-odm/lib64/camera/com.qti.sensormodule.nuwa_semco_imx989_wide.bin
-odm/lib64/camera/com.qti.sensormodule.nuwa_sunny_ov32c_front.bin
+odm/lib64/camera/com.qti.actuator.fuxi_ofilm_s5kjn1_dw9800v_tele_actuator.so
+odm/lib64/camera/com.qti.actuator.fuxi_ofilm_s5kjn1_dw9800v_ultra_actuator.so
+odm/lib64/camera/com.qti.actuator.fuxi_semco_imx989_ak7316_wide_actuator.so
+odm/lib64/camera/com.qti.eeprom.fuxi_ofilm_s5kjn1_gt24p128f_ultra_eeprom.so
+odm/lib64/camera/com.qti.eeprom.fuxi_ofilm_s5kjn1_p24c128f_tele_eeprom.so
+odm/lib64/camera/com.qti.eeprom.fuxi_semco_imx989_p24c128f_wide_eeprom.so
+odm/lib64/camera/com.qti.eeprom.fuxi_sunny_ov32c_gt24p64e_front_eeprom.so
+odm/lib64/camera/com.qti.ois.fuxi_tele_bu24618_ois.so
+odm/lib64/camera/com.qti.ois.fuxi_wide_bu24618_ois.so
+odm/lib64/camera/com.qti.sensor.fuxi_ofilm_s5kjn1_tele.so
+odm/lib64/camera/com.qti.sensor.fuxi_ofilm_s5kjn1_ultra.so
+odm/lib64/camera/com.qti.sensor.fuxi_semco_imx989_wide.so
+odm/lib64/camera/com.qti.sensor.fuxi_sunny_ov32c_front.so
+odm/lib64/camera/com.qti.sensormodule.fuxi_ofilm_s5kjn1_tele.bin
+odm/lib64/camera/com.qti.sensormodule.fuxi_ofilm_s5kjn1_ultra.bin
+odm/lib64/camera/com.qti.sensormodule.fuxi_semco_imx989_wide.bin
+odm/lib64/camera/com.qti.sensormodule.fuxi_sunny_ov32c_front.bin
 odm/lib64/camera/com.qti.tuned.default.bin
-odm/lib64/camera/com.qti.tuned.nuwa_ofilm_s5kjn1_tele.bin
-odm/lib64/camera/com.qti.tuned.nuwa_ofilm_s5kjn1_ultra.bin
-odm/lib64/camera/com.qti.tuned.nuwa_semco_imx989_wide.bin
-odm/lib64/camera/com.qti.tuned.nuwa_sunny_ov32c_front.bin
-odm/lib64/camera/com.qti.tuned.nuwa_sunny_ov32c_front_global.bin
+odm/lib64/camera/com.qti.tuned.fuxi_ofilm_s5kjn1_tele.bin
+odm/lib64/camera/com.qti.tuned.fuxi_ofilm_s5kjn1_ultra.bin
+odm/lib64/camera/com.qti.tuned.fuxi_semco_imx989_wide.bin
+odm/lib64/camera/com.qti.tuned.fuxi_sunny_ov32c_front.bin
+odm/lib64/camera/com.qti.tuned.fuxi_sunny_ov32c_front_global.bin
 odm/lib64/camera/fdconfigpreview.bin
 odm/lib64/camera/fdconfigpreviewlite.bin
 odm/lib64/camera/fdconfigsecure.bin
@@ -1031,12 +1031,12 @@ odm/lib64/camera/fdconfigvideo.bin
 odm/lib64/camera/fdconfigvideolite.bin
 
 # Camera Specific Firmware
-odm/firmware/nuwa_tele_bu24618_ois.coeff
-odm/firmware/nuwa_tele_bu24618_ois.mem
-odm/firmware/nuwa_tele_bu24618_ois.prog
-odm/firmware/nuwa_wide_bu24618_ois.coeff
-odm/firmware/nuwa_wide_bu24618_ois.mem
-odm/firmware/nuwa_wide_bu24618_ois.prog
+odm/firmware/fuxi_tele_bu24618_ois.coeff
+odm/firmware/fuxi_tele_bu24618_ois.mem
+odm/firmware/fuxi_tele_bu24618_ois.prog
+odm/firmware/fuxi_wide_bu24618_ois.coeff
+odm/firmware/fuxi_wide_bu24618_ois.mem
+odm/firmware/fuxi_wide_bu24618_ois.prog
 
 # Camera Firmware
 odm/firmware/CAMERA_ICP.b00

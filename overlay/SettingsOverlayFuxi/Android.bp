@@ -5,7 +5,7 @@
 //
 
 runtime_resource_overlay {
-    name: "ApertureOverlayNuwa",
+    name: "SettingsOverlayFuxi",
     sdk_version: "current",
     vendor: true,
 }

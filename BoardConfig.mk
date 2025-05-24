@@ -7,10 +7,7 @@
 # Inherit from xiaomi sm8550-common
 include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 
-# Inherit from the proprietary version
-include vendor/xiaomi/nuwa/BoardConfigVendor.mk
-
-DEVICE_PATH := device/xiaomi/nuwa
+DEVICE_PATH := device/xiaomi/fuxi
 
 # Kernel
 BOOT_KERNEL_MODULES += \
@@ -25,15 +22,18 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += \
 	fts_touch_spi.ko
 	
 # Display
-TARGET_SCREEN_DENSITY := 560
+TARGET_SCREEN_DENSITY := 440
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := nuwa
+TARGET_OTA_ASSERT_DEVICE := fuxi
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+
+# Inherit from the proprietary version
+include vendor/xiaomi/fuxi/BoardConfigVendor.mk

@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsProviderResNuwa",
+    name: "SettingsProviderResFuxi",
     device_specific: true
 }

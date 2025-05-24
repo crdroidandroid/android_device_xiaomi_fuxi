@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),nuwa)
+ifeq ($(TARGET_DEVICE),fuxi)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
