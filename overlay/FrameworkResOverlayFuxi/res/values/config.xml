@@ -438,6 +438,11 @@
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
 
+    <!--Whether the display cutout region of the main built-in display should be forced to
+        black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+        -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+    
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
@@ -455,7 +460,7 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -42,64 M 42,64 A 42,42 0 1,0 -42,64 A 42,42 0 1,0 42,64 Z</string>
+<string name="config_mainBuiltInDisplayCutout" translatable="false">M -34,64 M 34,64 A 34,34 0 1,0 -34,64 A 34,34 0 1,0 34,64 Z</string>
 
     <!--Like config_mainBuiltInDisplayCutout, but this path is used to report the
         one single bounding rect per device edge to the app via
@@ -463,7 +468,7 @@
         appearance of the cutout as much as possible, and may be smaller than
         config_mainBuiltInDisplayCutout
         -->
-    <string name="config_mainBuiltInDisplayCutoutRectApproximation">M 0,0 H -42 V 122 H 42 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation">M 0,0 H -34 V 104 H 34 V 0 H 0 Z</string>
 
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>

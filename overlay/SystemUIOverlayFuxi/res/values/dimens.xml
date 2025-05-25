@@ -5,10 +5,10 @@
 -->
 <resources>
     <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">150px</dimen>
+    <dimen name="keyguard_indication_margin_bottom">11dp</dimen>
 
     <!-- Location on the screen of the center of the physical power button. -->
-    <dimen name="physical_power_button_center_screen_location_y">1460px</dimen>
+    <dimen name="physical_power_button_center_screen_location_y">1040px</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">4dp</dimen>
@@ -20,11 +20,11 @@
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">24.0px</dimen>
+    <dimen name="status_bar_padding_top">18.0px</dimen>
 
     <!-- Adjust the icon padding in status bar for rounded corners. -->
-    <dimen name="rounded_corner_content_padding">72.0px</dimen>
+    <dimen name="rounded_corner_content_padding">49.0px</dimen>
 
     <!-- Pixel pitch of the device. um/px -->
-    <item name="pixel_pitch" format="float" type="dimen">48.71</item>
+    <item name="pixel_pitch" format="float" type="dimen">61.3</item>
 </resources>
