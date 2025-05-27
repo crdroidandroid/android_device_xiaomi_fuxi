@@ -33,4 +33,4 @@ PRODUCT_SYSTEM_DEVICE := Xiaomi 13
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.200.7.VMBCNXM:user/release-keys
+    BuildFingerprint=Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.200.9.VMCCNXM:user/release-keys
