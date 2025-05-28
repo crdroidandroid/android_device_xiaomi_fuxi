@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/fuxi/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Sign
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+
 # GMS
 $(call inherit-product, vendor/google/gms/gms-vendor.mk)
 
@@ -26,11 +29,11 @@ PRODUCT_MODEL := Xiaomi 13
 TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+TARGET_DISABLE_MATLOG := true
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_SYSTEM_NAME := Xiaomi 13
 PRODUCT_SYSTEM_DEVICE := Xiaomi 13
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.200.9.VMCCNXM:user/release-keys
