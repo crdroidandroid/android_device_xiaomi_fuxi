@@ -2,18 +2,22 @@
   {
     "repository": "crdroidandroid/android_device_xiaomi_sm8550-common",
     "target_path": "device/xiaomi/sm8550-common"
+    "branch": "15.0-fuxi"
   },
   {
     "repository": "crdroidandroid/android_kernel_xiaomi_sm8550",
     "target_path": "kernel/xiaomi/sm8550"
+    "branch": "15.0-fuxi"
   },
   {
     "repository": "crdroidandroid/android_kernel_xiaomi_sm8550-modules",
     "target_path": "kernel/xiaomi/sm8550-modules"
+    "branch": "15.0-fuxi"
   },
   {
     "repository": "crdroidandroid/android_kernel_xiaomi_sm8550-devicetrees",
     "target_path": "kernel/xiaomi/sm8550-devicetrees"
+    "branch": "15.0-fuxi"
   },
   {
     "repository": "crdroidandroid/android_hardware_xiaomi",
