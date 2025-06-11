@@ -119,10 +119,6 @@ vendor/lib/rfsa/adsp/nearby.napp_header;MODULE=nearby.napp_header
 vendor/lib/rfsa/adsp/nearby.so
 
 # Audio (Configs)
-odm/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml
-odm/etc/audio/sku_kalama/mixer_paths_overlay_dynamic.xml
-odm/etc/audio/sku_kalama/mixer_paths_overlay_static.xml
-odm/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml
 odm/etc/backend_conf.xml
 
 # Audio (Firmware)
