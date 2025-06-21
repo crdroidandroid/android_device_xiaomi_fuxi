@@ -1,9 +1,8 @@
-## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Xiaomi 13 AQ3A.240912.001 OS2.0.200.9.VMCCNXM
+# Unpinned blobs from fuxi 15 AQ3A.240912.001 OS2.0.203.0.VMCCNXM
 
 # ACDB
-odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb
-odm/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp
+odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/Tutu_acdb_cal.acdb
+odm/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp:vendor/etc/acdbdata/kalama_mtp/Tutu_workspaceFileXml.qwsp
 
 # ADSP (Modules)
 odm/etc/audio/misound_res_spk_power_game.bin
@@ -89,7 +88,6 @@ odm/mount/camera/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so:vendor/lib/rfsa/adsp/l
 odm/mount/camera/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so
 vendor/lib/rfsa/adsp/capi_cirrus_sp.so
 vendor/lib/rfsa/adsp/chre_qsh_shim.so
-vendor/lib/rfsa/adsp/hrtf5c.bin
 vendor/lib/rfsa/adsp/libDspIOProxy_skel.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
@@ -119,6 +117,10 @@ vendor/lib/rfsa/adsp/nearby.napp_header;MODULE=nearby.napp_header
 vendor/lib/rfsa/adsp/nearby.so
 
 # Audio (Configs)
+odm/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml
+odm/etc/audio/sku_kalama/mixer_paths_overlay_dynamic.xml
+odm/etc/audio/sku_kalama/mixer_paths_overlay_static.xml
+odm/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml
 odm/etc/backend_conf.xml
 
 # Audio (Firmware)
@@ -135,7 +137,6 @@ odm/firmware/cs35l41-dsp1-spk-cali.wmfw
 odm/firmware/cs35l41-dsp1-spk-prot.wmfw
 
 # Camera
-system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 odm/bin/hw/vendor.qti.camera.provider-service_64
 odm/etc/camera/af_class_all.dlc
 odm/etc/camera/af_class_human.dlc
@@ -179,8 +180,6 @@ odm/etc/camera/eisoverridesettings.txt
 odm/etc/camera/ellv.bin
 odm/etc/camera/ellv_params.xml
 odm/etc/camera/enhance_motiontuning.xml
-odm/etc/camera/VideoNight4K/ellv.bin
-odm/etc/camera/VideoNight4K/ellv_params.xml
 odm/etc/camera/facefocus_models/detlmk.dlc
 odm/etc/camera/facefocus_models/facedet_dark_full.dlc
 odm/etc/camera/facefocus_models/facedet_dark_part.dlc
@@ -238,14 +237,6 @@ odm/etc/camera/portrait_segmentation_qat.dlc
 odm/etc/camera/preview_bokeh_params_mono.json
 odm/etc/camera/preview_bokeh_params_pro.json
 odm/etc/camera/preview_mdbokeh_params_pro.json
-odm/etc/camera/sceneDetection.xml
-odm/etc/camera/sky_segmentation_qat.dlc
-odm/etc/camera/snsc.bin
-odm/etc/camera/snsc_params.json
-odm/etc/camera/ultrazoom.bin
-odm/etc/camera/ultrazoom_ii.bin
-odm/etc/camera/video_stabilizer.xml
-odm/etc/camera/vidhance_calibration
 odm/etc/camera/xiaomi/dualbokehjpegsnapshot.json
 odm/etc/camera/xiaomi/dualbokehsnapshot.json
 odm/etc/camera/xiaomi/EcoCloudInfo.json
@@ -386,7 +377,6 @@ odm/lib64/libcom.xiaomi.metadatautils.so
 odm/lib64/libcom.xiaomi.pluginutils.so
 odm/lib64/libcommonchiutils.so
 odm/lib64/libdeflicker.so
-odm/lib64/libdeflickerNM.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
 odm/lib64/libellv.so
@@ -471,7 +461,7 @@ odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libubifocus.so
 odm/lib64/libvideoBokeh.so
-odm/lib64/libvideofilter_only.so
+odm/lib64/libMiVideoFilter.so
 odm/lib64/libvideoml.so
 odm/lib64/libvidhance.so
 odm/lib64/libvidhance_active_ois.so
@@ -492,13 +482,9 @@ odm/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 odm/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
 
 # Camera Vendor
-vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service
 vendor/bin/hw/android.hardware.camera.provider@2.7-virtual-camera-service
 vendor/etc/init/android.hardware.camera.provider@2.7-virtual-camera-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vcamera.provider.xml
 vendor/lib64/hw/android.hardware.camera.provider@2.7-impl-vcamera.so
-vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/camera/libPlatformValidatorShared.so;MODULE_SUFFIX=-camera
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libQnnChrometraceProfilingReader.so
@@ -524,11 +510,9 @@ vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcalculator.so
 vendor/lib64/libcalculator_htp.so
 vendor/lib64/libcamxexternalformatutils.so
-vendor/lib64/libhta_hexagon_runtime_snpe.so
 vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmivsock_utils.so
 vendor/lib64/libos.so
-vendor/lib64/libquickcamera.so
 vendor/lib64/libqvr_cam_cdsp_driver_stub.so
 vendor/lib64/libqvr_cdsp_driver_stub.so
 vendor/lib64/libqvrcamera_client.qti.so
@@ -542,7 +526,6 @@ vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so
 
 # Camera Firmware
 odm/firmware/CAMERA_ICP.b00
@@ -661,12 +644,12 @@ odm/lib64/camera/components/com.xiaomi.node.smooth_transition.so
 odm/lib64/camera/components/libdepthmapwrapper_secure.so
 
 # Camera Firmware
-odm/firmware/fuxi_imx800_bu24721_ois_2.coeff
-odm/firmware/fuxi_imx800_bu24721_ois_2.mem
-odm/firmware/fuxi_imx800_bu24721_ois_2.prog
 odm/firmware/fuxi_imx800_bu24721_ois.coeff
 odm/firmware/fuxi_imx800_bu24721_ois.mem
 odm/firmware/fuxi_imx800_bu24721_ois.prog
+odm/firmware/fuxi_imx800_bu24721_ois_2.coeff
+odm/firmware/fuxi_imx800_bu24721_ois_2.mem
+odm/firmware/fuxi_imx800_bu24721_ois_2.prog
 odm/firmware/fuxi_s5k3k1_bu24618_ois_ii.coeff
 odm/firmware/fuxi_s5k3k1_bu24618_ois_ii.mem
 odm/firmware/fuxi_s5k3k1_bu24618_ois_ii.prog
@@ -680,7 +663,6 @@ odm/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.capdepth.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.caphdr.so
-odm/lib64/camera/plugins/com.xiaomi.plugin.deflicker.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.depurple.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.frontbokeh.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.gpu.so
@@ -1002,6 +984,34 @@ odm/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils.bin
 odm/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin
 odm/etc/camera/resources/truesight_param_debug.json
 odm/etc/camera/resources/truesight_param.json
+odm/etc/camera/videofilter/110_BlackGold.png
+odm/etc/camera/videofilter/129_LeicaVivid.png
+odm/etc/camera/videofilter/130_LeicaNatural.png
+odm/etc/camera/videofilter/131_MonochromeTrue.png
+odm/etc/camera/videofilter/132_MonochromeHighContrast.png
+odm/etc/camera/videofilter/133_MonochromeBrown.png
+odm/etc/camera/videofilter/134_MonochromeBlue.png
+odm/etc/camera/videofilter/144_RedHero.png
+odm/etc/camera/videofilter/146_TactileGreen.png
+odm/etc/camera/videofilter/148_Mild.png
+odm/etc/camera/videofilter/149_LilyWhite.png
+odm/etc/camera/videofilter/150_Bright.png
+odm/etc/camera/videofilter/151_Fresh.png
+odm/etc/camera/videofilter/152_Limpid.png
+odm/etc/camera/videofilter/153_KC64.png
+odm/etc/camera/videofilter/154_V250.png
+odm/etc/camera/videofilter/155_H400.png
+odm/etc/camera/videofilter/156_ColdWhite.png
+odm/etc/camera/videofilter/157_Native.png
+odm/etc/camera/videofilter/158_BWClassical.png
+odm/etc/camera/videofilter/159_Flowers.png
+odm/etc/camera/videofilter/160_Vivid.png
+odm/etc/camera/videofilter/161_KP160.png
+odm/etc/camera/videofilter/162_Natural.png
+odm/etc/camera/videofilter/163_KG200.png
+odm/etc/camera/videofilter/164_FC400.png
+odm/etc/camera/videofilter/165_C50D.png
+odm/etc/camera/videofilter/166_F50.png
 
 # Camera Sensors
 odm/lib64/camera/com.qti.actuator.fuxi_semco_imx800_ak7314_wide_actuator.so
@@ -1087,6 +1097,9 @@ odm/etc/disp0/mdss_dsi_m3_38_0c_0a_dsc_cmd/mi_gc_1.txt
 odm/etc/disp0/mdss_dsi_m3_38_0c_0a_dsc_cmd/mi_gc_2.txt
 odm/etc/disp0/mdss_dsi_m3_38_0c_0a_dsc_cmd/mi_gc_3.txt
 odm/etc/df_default.xml
+
+# eUICC - from lynx-user 14 UQ1A.240105.004
+product/priv-app/EuiccGoogle/EuiccGoogle.apk|29f8c2d4301cc1c0c023dd1c205cfdec5bfc73aa;PRESIGNED
 
 # Fingerprint
 odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME

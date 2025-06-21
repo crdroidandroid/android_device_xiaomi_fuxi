@@ -4,15 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit common AOSP configurations
+$(call inherit-product, build/make/target/product/full_base_telephony.mk)
+$(call inherit-product, build/make/target/product/core_64_bit.mk)
 
-# Inherit from fuxi device
+# Inherit device-specific configurations
 $(call inherit-product, device/xiaomi/fuxi/device.mk)
-
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Sign
 $(call inherit-product, vendor/lineage-priv/keys/keys.mk)
@@ -20,23 +17,16 @@ $(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 # GMS
 $(call inherit-product, vendor/google/gms/gms-vendor.mk)
 
-PRODUCT_NAME := lineage_fuxi
+# Inherit LineageOS configurations
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 PRODUCT_DEVICE := fuxi
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := lineage_fuxi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi 13
-
-TARGET_HAS_UDFPS := true
-TARGET_SUPPORTS_BLUR := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_DEVICE_AS_WEBCAM := true
-TARGET_DISABLE_MATLOG := true
-TARGET_ENABLE_BLUR := true
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := Xiaomi 13
 PRODUCT_SYSTEM_DEVICE := Xiaomi 13
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.200.9.VMCCNXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.203.0.VMCCNXM:user/release-keys
